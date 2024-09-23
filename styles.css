@@ -1,0 +1,35 @@
+/* Default styles for desktop */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    margin-top: 20px;
+    width: 80%;
+    height: 150px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+button i {
+    margin-right:8px;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+    textarea {
+        width: 95%;
+        height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
