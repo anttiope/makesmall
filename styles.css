@@ -27,6 +27,10 @@ textarea {
     width: 80%;
     height: 150px;
 }
+.dark-mode textarea {
+    background-color: #333333;
+    color: #e0e0e0;
+}
 
 button {
     margin-top: 10px;
