@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 .dark-mode {
     background-color: #121212; /* dark grey */
@@ -26,6 +27,7 @@ textarea {
     margin-top: 20px;
     width: 80%;
     height: 150px;
+    transition: background-color 0.3s, color 0.3s;
 }
 .dark-mode textarea {
     background-color: #333333;
@@ -36,6 +38,7 @@ button {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
 }
 button i {
     margin-right:8px;
@@ -43,6 +46,13 @@ button i {
 .dark-mode button {
     background-color: #444444;
     color: #e0e0e0;
+}
+button.light-dark-toggle {
+    background-color: #6a0dad;
+    color: #ffffff;
+}
+button.light-dark-toggle:hover {
+    background-color: #8a2be2;
 }
 
 /* Styles for mobile devices */
