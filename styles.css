@@ -40,6 +40,10 @@ button {
 button i {
     margin-right:8px;
 }
+.dark-mode button {
+    background-color: #444444;
+    color: #e0e0e0;
+}
 
 /* Styles for mobile devices */
 @media (max-width: 600px) {
