@@ -47,11 +47,18 @@ button i {
     background-color: #444444;
     color: #e0e0e0;
 }
-button.theme-toggle {
+button.light-dark-toggle {
     background-color: #6a0dad;
     color: #ffffff;
 }
-button.theme-toggle:hover {
+button.light-dark-toggle:hover {
+    background-color: #8a2be2;
+}
+.dark-mode button.light-dark-toggle {
+    background-color: #6a0dad;
+    color: #ffffff;
+}
+.dark-mode button.light-dark-toggle:hover {
     background-color: #8a2be2;
 }
 
