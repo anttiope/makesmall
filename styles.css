@@ -40,12 +40,20 @@ button {
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
 }
+button:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
 button i {
     margin-right:8px;
 }
 .dark-mode button {
     background-color: #444444;
     color: #e0e0e0;
+}
+.dark-mode button:hover {
+    background-color: #555555;
+    color: #ffffff;
 }
 button.light-dark-toggle {
     background-color: #6a0dad;
