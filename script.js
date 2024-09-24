@@ -27,3 +27,27 @@ async function copyToClipboard() {
 	}
     }
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
+            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        }
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        let theme = 'light-mode';
+        if (document.body.classList.contains('dark-mode')) {
+            theme = 'dark-mode';
+            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        } else {
+            themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+        }
+        localStorage.setItem('theme', theme);
+    });
+});
