@@ -1,2 +1,4 @@
 # makesmall
-A small website to convert UPPERCASE text to lowercase and vice versa.
+Easily convert text between UPPERCASE and lowercase with this simple online tool. Perfect for quick text transformations and formatting needs.
+
+https://makesmall.org
