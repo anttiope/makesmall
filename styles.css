@@ -11,6 +11,16 @@ body {
     background-color: #121212; /* dark grey */
     color: #e0e0e0; /* light grey */
 }
+.inline-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.inline-container iframe,
+.inline-container a {
+    display: inline-block;
+    vertical-align: middle;
+}
 textarea {
     margin-top: 20px;
     width: 80%;
