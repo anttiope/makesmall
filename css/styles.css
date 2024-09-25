@@ -51,6 +51,7 @@ button {
     height: 16px;
     fill: #e0e0e0;
     vertical-align: middle;
+}
 button:hover {
     background-color: #dddddd;
     color: #000000;
