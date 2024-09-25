@@ -10,22 +10,23 @@ function makeBig() {
 
 async function copyToClipboard() {
   const textBox = document.getElementById("textBox");
-  if (navigator.clipboard.writeText) {
-    // if the new method to copy to clipboard is available...
-    try {
-      await navigator.clipboard.writeText(textBox.value); // use the new method for copying to clipboard
-      textBox.value = ""; // clear text box to give feedback to user
-    } catch (err) {
-      console.error("Failed to copy: ", err);
-    }
-  } else {
-    try {
+  if (!textBox) {
+    console.error("Text box element not found");
+    return;
+  }
+
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      // Use the modern clipboard API
+      await navigator.clipboard.writeText(textBox.value);
+    } else {
+      // Fallback to the older method
       textBox.select();
-      await document.execCommand("copy"); // old method for copying to clipboard
-      textBox.value = "";
-    } catch (err) {
-      console.error("Fallback copy failed: ", err);
+      document.execCommand("copy");
     }
+    textBox.value = ""; // Clear text box to give feedback to user
+  } catch (err) {
+    console.error("Failed to copy text to clipboard: ", err);
   }
 }
 
