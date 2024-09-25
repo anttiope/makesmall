@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (currentTheme) {
         document.body.classList.add(currentTheme);
         if (currentTheme === 'dark-mode') {
-            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i> Light Mode';
         }
     }
 
@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let theme = 'light-mode';
         if (document.body.classList.contains('dark-mode')) {
             theme = 'dark-mode';
-            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i> Light Mode';
         } else {
-            themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i> Dark Mode';
         }
         localStorage.setItem('theme', theme);
     });
