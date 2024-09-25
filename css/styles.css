@@ -43,13 +43,7 @@ button {
 .icon {
     width: 16px;
     height: 16px;
-    fill: #000000;
-    vertical-align: middle;
-}
-.dark-mode .icon {
-    width: 16px;
-    height: 16px;
-    fill: #e0e0e0;
+    fill: #ffffff;
     vertical-align: middle;
 }
 button:hover {
