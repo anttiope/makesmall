@@ -35,6 +35,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (currentTheme) {
         document.body.classList.add(currentTheme);
         if (currentTheme === 'dark-mode') {
+            themeToggleBtn.innerHTML = '<img src="icons/sun-solid.svg" class="icon"> Light mode';
+        }
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        let theme = 'light-mode';
+        if (document.body.classList.contains('dark-mode')) {
+            theme = 'dark-mode';
+            themeToggleBtn.innerHTML = '<img src="icons/sun-solid.svg" class="icon"> Light mode';
+        } else {
+            themeToggleBtn.innerHTML = '<img src="icons/moon-solid.svg" class="icon"> Dark mode';
+        }
+        localStorage.setItem('theme', theme);
+    });
+});
+/*
+document.addEventListener('DOMContentLoaded', (event) => {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
             themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i> Light Mode';
         }
     }
@@ -50,4 +74,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         localStorage.setItem('theme', theme);
     });
-});
+});*/
