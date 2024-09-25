@@ -43,9 +43,10 @@ button {
 .icon {
     width: 24px;
     height: 24px;
-    fill: #000;
+    fill: #000000;
     vertical-align: middle;
 }
+
 button:hover {
     background-color: #dddddd;
     color: #000000;
