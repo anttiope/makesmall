@@ -40,7 +40,13 @@ button {
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
 }
-.icon {
+.icon img {
+    width: 16px;
+    height: 16px;
+    fill: #000000;
+    vertical-align: middle;
+}
+.dark-mode .icon img {
     width: 16px;
     height: 16px;
     fill: #ffffff;
