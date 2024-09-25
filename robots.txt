@@ -1,9 +1,9 @@
 User-agent: *
-Disallow: 
+Disallow: /icons/
 Disallow: /README.md
 Disallow: /.github/
 Disallow: /privacypolicy.html
 Disallow: /cookiepolicy.html
-Disallow: /styles.css
-Disallow: /script.js
+Disallow: /css/
+Disallow: /js/
 Sitemap: https://makesmall.org/sitemap.xml
