@@ -39,6 +39,7 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 img[src$=".svg"] {
   width: 16px;
@@ -73,12 +74,20 @@ button.light-dark-toggle {
 button.light-dark-toggle:hover {
   background-color: #8a2be2;
 }
-.dark-mode button.light-dark-toggle {
-  background-color: #6a0dad;
-  color: #ffffff;
+
+.github-sponsor-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #000;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
 }
-.dark-mode button.light-dark-toggle:hover {
-  background-color: #8a2be2;
+.github-sponsor-button:hover {
+  background-color: #a3a3a3;
 }
 
 /* Styles for mobile devices */
