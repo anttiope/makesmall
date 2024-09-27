@@ -20,8 +20,8 @@ body {
 }
 .inline-container iframe,
 .inline-container a {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 textarea {
   margin-top: 20px;
@@ -84,7 +84,7 @@ button.light-dark-toggle:hover {
 }
 
 .github-sponsor-button {
-  padding: 8px 16px;
+  padding: 8px 8px;
   font-size: 14px;
   font-weight: lighter;
   color: #000;
@@ -96,6 +96,15 @@ button.light-dark-toggle:hover {
 }
 .github-sponsor-button:hover {
   background-color: #a3a3a3;
+}
+.github-sponsor-button img {
+  margin-right: 4px;
+}
+.dark-mode a {
+  color: #8BC34A;
+}
+.dark-mode .github-sponsor-button {
+  color: #000000;
 }
 
 /* Styles for mobile devices */
